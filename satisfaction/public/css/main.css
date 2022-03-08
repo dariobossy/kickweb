@@ -1,0 +1,140 @@
+/* ===================
+    GENERAL STYLES
+=================== */
+
+:root {
+    --black: #010101;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    background-color: var(--black);
+    margin: 0;
+    padding-bottom: 140px;
+}
+
+h1,h2,h3,h4,h5,h6, p {
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 7vw;
+    line-height: 8vw;
+}
+
+h2 {
+    font-size: 6rem;
+    font-style: italic;
+    line-height: 7.5rem;
+}
+
+/* ===================
+    SECTIONS
+=================== */
+
+section {
+    min-height: 100vh;
+}
+section.active {
+    visibility: visible;
+}
+
+section > .section-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+section.section > .section-wrapper {
+    height: 100vh;
+    position: relative;
+}
+
+section > .section-wrapper > .section-inner {
+    padding: 0 7vw;
+    position: relative;
+    z-index: 1;
+}
+
+section .section-inner.inner-middle {
+    margin: auto;
+    text-align: center;
+}
+
+section .section-inner.inner-middle {
+    margin: auto;
+    text-align: center;
+}
+
+
+/* ===================
+    SECTION 01
+=================== */
+
+.section-1 .section-wrapper > .section-inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section-1 > .section-wrapper .section-inner.inner-middle-left {
+    left: 17vw;
+}
+
+.section-1 > .section-wrapper > .section-inner.inner-middle-left div:nth-of-type(2n) {
+    position: relative;
+    z-index: -1;
+}
+
+.section-1 > .section-wrapper > .section-inner.inner-middle-right {
+    right: 17vw;
+    transform: scale(-1, 1) translateY(-50%);
+}
+
+.section-1 > .section-wrapper .img-heart {
+    /*position: absolute;
+    right: 0;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;*/
+    text-align: center;
+}
+
+.section-1 > .section-wrapper .img-heart img {
+    width: 45vw;
+    max-height: 90vh;
+}
+
+/* ===================
+    SECTION 02
+=================== */
+
+
+
+/* ===================
+    SECTION 03
+=================== */
+
+.section-03 > .section-wrapper > .img-absolute-right.img-heart img {
+    animation: img-heartbeat 3s infinite;
+    width: 100%;
+}
+
+@keyframes img-heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.05);
+    }
+    20% {
+        transform: scale(1);
+    }
+}
