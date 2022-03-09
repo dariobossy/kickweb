@@ -13,7 +13,7 @@ html {
 body {
     background-color: var(--black);
     margin: 0;
-    padding-bottom: 140px;
+    overflow-x: hidden;
 }
 
 h1,h2,h3,h4,h5,h6, p {
@@ -32,6 +32,19 @@ h2 {
     font-style: italic;
     line-height: 7.5rem;
 }
+
+h3 {
+    font-size: 4rem;
+    font-style: italic;
+    line-height: 4.5rem;
+}
+
+p.text-large {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    margin: 0 0 2.5vw 2.5vw;
+}
+
 
 /* ===================
     SECTIONS
@@ -71,6 +84,10 @@ section .section-inner.inner-middle {
     text-align: center;
 }
 
+section .section-inner.inner-left-bottom {
+    margin-right: auto;
+    margin-top: auto;
+}
 
 /* ===================
     SECTION 01
@@ -112,6 +129,22 @@ section .section-inner.inner-middle {
     max-height: 90vh;
 }
 
+.section-1 > .section-wrapper .img-heart img {
+    animation: img-heartbeat 2s infinite;
+}
+
+@keyframes img-heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.1);
+    }
+    20% {
+        transform: scale(1);
+    }
+}
+
 /* ===================
     SECTION 02
 =================== */
@@ -122,19 +155,33 @@ section .section-inner.inner-middle {
     SECTION 03
 =================== */
 
-.section-03 > .section-wrapper > .img-absolute-right.img-heart img {
-    animation: img-heartbeat 3s infinite;
-    width: 100%;
+.section-3 .text-transformed {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(60deg);
 }
 
-@keyframes img-heartbeat {
-    0% {
-        transform: scale(1);
-    }
-    10% {
-        transform: scale(1.05);
-    }
-    20% {
-        transform: scale(1);
-    }
+.section-3 .text-first {
+    transform: rotate(-30deg) translate(-2vw,-10vw);
+}
+
+.section-3 .text-second {
+    transform: rotate(-30deg) translate(0vw,12vw);
+}
+
+/* ===================
+    SECTION 05
+=================== */
+
+.section-5 {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.section-5 .text-fullscreen {
+    transform: rotate(-15deg) translate(0%, -35%) skewX(-15deg);
+    text-transform: uppercase;
+    width: 140vw;
 }

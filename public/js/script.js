@@ -70,3 +70,33 @@ gsap.to(".section-2 .inner-middle  .third-try", {opacity: "1", scrollTrigger: {
       pin:true,
       scrub: true
 }})
+
+gsap.set(".section-3 .text-transformed div", {x: "0", y: "200"}),
+gsap.to(".section-3 .text-transformed div", {x: "0", y: "-200", scrollTrigger: {
+      trigger: ".section-3",
+      start: "0",
+      end: "+=1000",
+      //markers:true,
+      pin:true,
+      scrub: true
+}})
+
+gsap.set(".section-4 .text-large", {x: "0", y: "-200", opacity: 0.4, scale: 0.8}),
+gsap.to(".section-4 .text-large", {x: "0", y: "200", opacity: 1, scale: 1, scrollTrigger: {
+      trigger: ".section-4",
+      //start: "0",
+      //end: "+=1000",
+      //markers:true,
+      //pin:true,
+      scrub: true
+}})
+
+gsap.set(".section-5 .text-large", {rotate: "-30", y: 0}),
+gsap.to(".section-5 .text-large", {rotate: "5", scrollTrigger: {
+      trigger: ".section-5",
+      start: "0",
+      end: "+=700",
+      //markers:true,
+      pin:true,
+      scrub: true
+}})
