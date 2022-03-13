@@ -52,36 +52,6 @@ p.text-xlarge {
     margin: 0 0 2.5vw 2.5vw;
 }
 
-
-/* ===================
-    HEADER
-=================== */
-
-#header {
-    position: absolute;
-    text-align: right;
-    margin: 25px;
-    left: 0;
-    right: 0;
-    z-index: 10;
-}
-#header .link-layout {
-    font-size: 0.75rem;
-    padding: 10px 15px;
-    display: inline-block;
-    font-family: sans-serif;
-    color: white;
-    text-decoration: none;
-    border: 1px solid white;
-    border-radius: 50px;
-    opacity: 0.5;
-    transition: 0.2s
-}
-
-#header .link-layout:hover {
-    opacity: 1;
-}
-
 /* ===================
     SECTIONS
 =================== */
