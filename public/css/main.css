@@ -43,7 +43,7 @@ h3 {
 p.text-large {
     font-size: 4rem;
     line-height: 4.5rem;
-    margin: 0 0 2.5vw 2.5vw;
+    /*margin: 0 0 2.5vw 2.5vw;*/
 }
 
 p.text-xlarge {
@@ -165,7 +165,7 @@ section .ection-wrapper .img-heart img {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%) rotate(60deg);
+    transform: translate(-40%,-50%) rotate(60deg);
     font-style: italic;
 }
 
@@ -198,5 +198,26 @@ section .text-fullscreen {
 =================== */
 
 .section-7 {
+    position: relative;
+    background-color: var(--black);
+}
+
+.section-7 .background {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
     background-color: var(--red);
+}
+
+/* ===================
+    SECTION 09
+=================== */
+
+.section-9 .text-fullscreen {
+    transform: rotate(-15deg) translate(-2%, -35%) skewX(-15deg);
+    text-transform: uppercase;
+    width: 140vw;
 }
