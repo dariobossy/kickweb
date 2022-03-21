@@ -1,0 +1,202 @@
+/* ===================
+    GENERAL STYLES
+=================== */
+
+:root {
+    --black: #010101;
+    --red: #EB2828;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    background-color: var(--black);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6, p {
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 7vw;
+    line-height: 8vw;
+}
+
+h2 {
+    font-size: 6rem;
+    font-style: italic;
+    line-height: 7.5rem;
+}
+
+h3 {
+    font-size: 4rem;
+    font-style: italic;
+    line-height: 4.5rem;
+}
+
+p.text-large {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    margin: 0 0 2.5vw 2.5vw;
+}
+
+p.text-xlarge {
+    font-size: 7rem;
+    line-height: 7.5rem;
+    margin: 0 0 2.5vw 2.5vw;
+}
+
+/* ===================
+    SECTIONS
+=================== */
+
+section {
+    min-height: 100vh;
+}
+section.active {
+    visibility: visible;
+}
+
+section > .section-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+section.section > .section-wrapper {
+    height: 100vh;
+    position: relative;
+}
+
+section > .section-wrapper > .section-inner {
+    padding: 0 7vw;
+    position: relative;
+    z-index: 1;
+}
+
+section .section-inner.inner-middle {
+    margin: auto;
+    text-align: center;
+}
+
+section .section-inner.inner-middle {
+    margin: auto;
+    text-align: center;
+}
+
+section .section-inner.inner-left-bottom {
+    margin-right: auto;
+    margin-top: auto;
+}
+
+/* ===================
+    SECTION 01
+=================== */
+
+.section-heart .section-wrapper > .section-inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section-heart > .section-wrapper .section-inner.inner-middle-left {
+    left: 17vw;
+}
+
+.section-heart > .section-wrapper > .section-inner.inner-middle-left div:nth-of-type(2n) {
+    position: relative;
+    z-index: -1;
+}
+
+.section-heart > .section-wrapper > .section-inner.inner-middle-right {
+    right: 17vw;
+    transform: scale(-1, 1) translateY(-50%);
+}
+
+section .section-wrapper .img-heart {
+    /*position: absolute;
+    right: 0;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;*/
+    text-align: center;
+}
+
+section > .section-wrapper .img-heart img {
+    width: 45vw;
+    max-height: 90vh;
+}
+
+section .ection-wrapper .img-heart img {
+    animation: img-heartbeat 2s infinite;
+}
+
+@keyframes img-heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.1);
+    }
+    20% {
+        transform: scale(1);
+    }
+}
+
+/* ===================
+    SECTION 02
+=================== */
+
+
+
+/* ===================
+    SECTION 03
+=================== */
+
+.section-3 .text-transformed {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(60deg);
+    font-style: italic;
+}
+
+.section-3 .text-first {
+    transform: rotate(-30deg) translate(-2vw,-10vw);
+}
+
+.section-3 .text-second {
+    transform: rotate(-30deg) translate(0vw,12vw);
+}
+
+/* ===================
+    SECTION 05
+=================== */
+
+.section-fullscreen {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+section .text-fullscreen {
+    transform: rotate(-15deg) translate(0%, -35%) skewX(-15deg);
+    text-transform: uppercase;
+    width: 140vw;
+}
+
+/* ===================
+    SECTION 07
+=================== */
+
+.section-7 {
+    background-color: var(--red);
+}
