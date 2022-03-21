@@ -71,6 +71,8 @@ gsap.to(".section-2 .inner-middle  .third-try", {opacity: "1", scrollTrigger: {
       scrub: true
 }})
 
+
+//driving
 gsap.set(".section-3 .text-transformed div", {x: "0", y: "200"}),
 gsap.to(".section-3 .text-transformed div", {x: "0", y: "-200", scrollTrigger: {
       trigger: ".section-3",
@@ -81,6 +83,8 @@ gsap.to(".section-3 .text-transformed div", {x: "0", y: "-200", scrollTrigger: {
       scrub: true
 }})
 
+
+// hes telling me
 gsap.set(".section-4 .text-large", {x: "0", y: "-200", opacity: 0.4, scale: 0.8}),
 gsap.to(".section-4 .text-large", {x: "0", y: "200", opacity: 1, scale: 1, scrollTrigger: {
       trigger: ".section-4",
@@ -91,9 +95,45 @@ gsap.to(".section-4 .text-large", {x: "0", y: "200", opacity: 1, scale: 1, scrol
       scrub: true
 }})
 
+
+// and more
 gsap.set(".section-5 .text-large", {rotate: "-30", y: 0}),
 gsap.to(".section-5 .text-large", {rotate: "5", scrollTrigger: {
       trigger: ".section-5",
+      start: "0",
+      end: "+=700",
+      //markers:true,
+      pin:true,
+      scrub: true
+}})
+
+
+// fire my imagination text
+gsap.set(".section-7 .text-large", {opacity: "1", y: 0}),
+gsap.to(".section-7 .text-large", {opacity: "1", scrollTrigger: {
+      trigger: ".section-7",
+      start: "0",
+      end: "+=1200",
+      //markers:true,
+      pin:true,
+      scrub: true
+}})
+
+// fire my imagination bg
+gsap.set(".section-7 .background", {scale: "1", y: 0}),
+gsap.to(".section-7 .background", {scale: "0.75", scrollTrigger: {
+      trigger: ".section-7",
+      start: "0",
+      end: "+=1200",
+      //markers:true,
+      pin:true,
+      scrub: true
+}})
+
+// no, no, hey
+gsap.set(".section-9 .text-large", {rotate: "-30", y: 0}),
+gsap.to(".section-9 .text-large", {rotate: "5", scrollTrigger: {
+      trigger: ".section-9",
       start: "0",
       end: "+=700",
       //markers:true,
