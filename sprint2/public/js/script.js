@@ -184,12 +184,41 @@ gsap.to(".section-5 p:nth-of-type(7)", {x: "-2000", y: "0", scrollTrigger: {
       scrub: true
 }})
 
-gsap.set(".section-7 svg", {y: "100vh"}),
-gsap.to(".section-7 svg", {y: "-30vh", scrollTrigger: {
+gsap.to(".section-7 .text-large", {y: "-30vh", scrollTrigger: {
       trigger: ".section-7",
       start: "0",
-      end: "+=1000",
+      end: "+=1500",
       //markers:true,
       pin:true,
       scrub: true
 }})
+
+gsap.set(".section-7 svg", {y: "100vh"}),
+gsap.to(".section-7 svg", {y: "-30vh", scrollTrigger: {
+      trigger: ".section-7",
+      start: "-200",
+      //end: "+=1500",
+      //markers:true,
+      //pin:true,
+      scrub: true
+}})
+
+gsap.set(".section-7 #fire-container", {y: "80vh", scaleY: 0}),
+gsap.to(".section-7 #fire-container", {y: "-10vh", scaleY: 1, scrollTrigger: {
+      trigger: ".section-7",
+      start: "-100",
+      //end: "+=1000",
+      //markers:true,
+      //pin:true,
+      scrub: true
+}})
+
+var animation = bodymovin.loadAnimation({
+      // animationData: { /* ... */ },
+      container: document.getElementById('fire-container'), // required
+      path: '/sprint2/media/lottie/more-fire.json', // required
+      renderer: 'svg', // required
+      loop: true, // optional
+      autoplay: true, // optional
+      name: "Wave Animation", // optional
+ });

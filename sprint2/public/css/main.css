@@ -434,7 +434,90 @@ section .text-fullwidth p:nth-of-type(7) {
     right: 0;
     bottom: 0;
 }
+.section-7 #fire-container {
+    position: absolute;
+    z-index: 32;
+    bottom: -20vw;
+    width: 100vw;
+    height: 100vw;
+}
+
+/* ===================
+    SECTION 08
+=================== */
 
 .section-8 {
     background-color: var(--red);
+    margin-top: -50vh;
+    position: relative;
+    z-index: 50;
+    pointer-events: none;
+}
+
+.section-8 b {
+    position: relative;
+}
+
+.section-8 b::after {
+    content: "";
+    position: absolute;
+    background-image: url("data:image/svg+xml,%3Csvg width='163' height='27' viewBox='0 0 163 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 24C8.66667 13.3334 24.2 -4.79998 41 8.00002C62 24 75 4.95911e-05 98 8.00002C121 16 141 2.00005 160 24' stroke='black' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    height: 20px;
+    width: 100%;
+}
+
+/* ===================
+    SECTION 09
+=================== */
+
+.section-9 {
+    position: relative;
+    padding-top: 30vw;
+}
+
+.section-9 svg {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+}
+.section-9 i {
+    animation: colorSwitch 2.5s 0s infinite;
+}
+
+.section-9 p {
+    animation: colorSwitch 2.5s 1.25s infinite;
+}
+
+@keyframes colorSwitch {
+    0% {
+        color: white;
+    }
+    49% {
+        color: white;
+    }
+    50% {
+        color: var(--red);
+    }
+    99% {
+        color: var(--red);
+    }
+}
+
+
+.section-9 .text-fullscreen {
+    width: 120vw;
+    margin-left: -10vw;
+}
+
+.section-9 .text-fullscreen p {
+    font-size: 10vw;
+    line-height: 10vw;
 }
