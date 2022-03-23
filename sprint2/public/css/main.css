@@ -70,7 +70,7 @@ section > .section-wrapper {
 }
 
 section.section > .section-wrapper {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 }
 
@@ -131,12 +131,9 @@ section .section-wrapper .img-heart {
 }
 
 section > .section-wrapper .img-heart img {
-    width: 45vw;
+    width: 50vw;
     max-height: 90vh;
-}
-
-section .ection-wrapper .img-heart img {
-    animation: img-heartbeat 2s infinite;
+    animation: img-heartbeat 1.25s infinite;
 }
 
 @keyframes img-heartbeat {
@@ -144,10 +141,176 @@ section .ection-wrapper .img-heart img {
         transform: scale(1);
     }
     10% {
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
     20% {
         transform: scale(1);
+    }
+}
+
+.section-1 .section-inner:nth-of-type(1) h1 div:nth-of-type(1) {
+    animation: text-toggle-01 5s infinite;
+    opacity: 0;
+}
+
+.section-1 .section-inner:nth-of-type(1) h1 div:nth-of-type(2) {
+    animation: text-toggle-02 5s infinite;
+    opacity: 0;
+}
+
+.section-1 .section-inner:nth-of-type(1) h1 div:nth-of-type(3) {
+    animation: text-toggle-03 5s infinite;
+    opacity: 0;
+}
+
+.section-1 .section-inner:nth-of-type(1) h1 div:nth-of-type(4) {
+    animation: text-toggle-04 5s infinite;
+    opacity: 0;
+}
+
+.section-1 .section-inner:nth-of-type(3) h1 div:nth-of-type(1) {
+    animation: text-toggle-05 5s infinite;
+    opacity: 0;
+}
+
+.section-1 .section-inner:nth-of-type(3) h1 div:nth-of-type(2) {
+    animation: text-toggle-06 5s infinite;
+    opacity: 0;
+}
+
+.section-1 .section-inner:nth-of-type(3) h1 div:nth-of-type(3) {
+    animation: text-toggle-07 5s infinite;
+    opacity: 0;
+}
+
+.section-1 .section-inner:nth-of-type(3) h1 div:nth-of-type(4) {
+    animation: text-toggle-08 5s infinite;
+    opacity: 0;
+}
+
+@keyframes text-toggle-01 {
+    1% {
+        opacity: 1
+    }
+    24% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    98% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 1;
+    }
+}
+
+@keyframes text-toggle-02 {
+    24% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes text-toggle-03 {
+    49% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1
+    }
+    74% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+}
+
+@keyframes text-toggle-04 {
+    74% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes text-toggle-06 {
+    1% {
+        opacity: 1
+    }
+    24% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    98% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 1;
+    }
+}
+
+@keyframes text-toggle-05 {
+    24% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes text-toggle-08 {
+    49% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1
+    }
+    74% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+}
+
+@keyframes text-toggle-07 {
+    74% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
 
@@ -155,44 +318,104 @@ section .ection-wrapper .img-heart img {
     SECTION 02
 =================== */
 
+.section-2 h2 {
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 5rem;
+    line-height: 6.5rem;
+    position: relative;
+}
 
+.section-2 h2 svg {
+    position: absolute;
+    left: 50%;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+}
+
+.section-2 h2:nth-of-type(2) svg {
+    width: 75%;
+}
 
 /* ===================
     SECTION 03
 =================== */
 
 .section-3 .text-transformed {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%) rotate(60deg);
     font-style: italic;
 }
 
-.section-3 .text-first {
-    transform: rotate(-30deg) translate(-2vw,-10vw);
+.section-3 .flex-column {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.section-3 .flex-column div:not(.text-transformed) div {
+    display: flex;
+    height: 100vh;
+    width: 100%;
 }
 
-.section-3 .text-second {
-    transform: rotate(-30deg) translate(0vw,12vw);
+.section-3 .flex-column div:not(.text-transformed) p {
+    margin: auto;
+    padding: 30px;
 }
+
+.section-3 .text-transformed {
+    transform: perspective(200px) rotateX(5deg);
+}
+
 
 /* ===================
     SECTION 05
 =================== */
 
-.section-fullscreen {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+.section-fullwidth {
+    position: relative;
 }
 
-section .text-fullscreen {
-    transform: rotate(-15deg) translate(0%, -35%) skewX(-15deg);
+section .text-fullwidth {
+    /*transform: translate(0%, -50%);*/
     text-transform: uppercase;
-    width: 140vw;
+    text-align: center;
+    white-space: nowrap;
+    transform: translateX(-5vw);
 }
 
+section .text-fullwidth p i {
+    color: var(--red);
+}
+
+section .text-fullwidth p:nth-of-type(1) {
+    line-height: 2.5rem;
+}
+
+section .text-fullwidth p:nth-of-type(2) {
+    font-size: 5rem;
+    line-height: 3.5rem;
+}
+section .text-fullwidth p:nth-of-type(3) {
+    font-size: 6rem;
+    line-height: 4.5rem;
+}
+section .text-fullwidth p:nth-of-type(4) {
+    font-size: 8rem;
+    line-height: 6rem;
+}
+section .text-fullwidth p:nth-of-type(5) {
+    font-size: 11rem;
+    line-height: 9rem;
+}
+section .text-fullwidth p:nth-of-type(6) {
+    font-size: 17rem;
+    line-height: 14rem;
+}
+section .text-fullwidth p:nth-of-type(7) {
+    font-size: 25rem;
+    line-height: 19rem;
+}
 /* ===================
     SECTION 07
 =================== */
