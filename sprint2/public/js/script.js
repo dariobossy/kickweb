@@ -94,7 +94,7 @@ gsap.to(".section-3 .text-transformed div", {x: "0", y: "-1420", scrollTrigger: 
 }})
 /* SECTION 4 */
 
-gsap.set(".section-4 .text-large", {x: "0", y: "-00", opacity: 0.4, scale: 0.8}),
+gsap.set(".section-4 .text-large", {x: "0", y: "0", opacity: 0.4, scale: 0.8}),
 gsap.to(".section-4 .text-large", {x: "0", y: "200", opacity: 1, scale: 1, scrollTrigger: {
       trigger: ".section-4",
       //start: "0",
@@ -113,3 +113,83 @@ gsap.to(".section-5 .text-large", {rotate: "5", scrollTrigger: {
       pin:true,
       scrub: true
 }})*/
+
+gsap.set(".section-5 p:nth-of-type(1)", {x: "-200", y: "0"}),
+gsap.to(".section-5 p:nth-of-type(1)", {x: "0", y: "0", scrollTrigger: {
+      trigger: ".section-5 p:nth-of-type(1)",
+      start: "-900",
+      end: "+=1000",
+      //markers:true,
+     //pin:true,
+      scrub: true
+}})
+
+gsap.set(".section-5 p:nth-of-type(2)", {x: "-400", y: "0"}),
+gsap.to(".section-5 p:nth-of-type(2)", {x: "-600", y: "0", scrollTrigger: {
+      trigger: ".section-5 p:nth-of-type(2)",
+      start: "-900",
+      end: "+=1000",
+      //markers:true,
+     //pin:true,
+      scrub: true
+}})
+
+gsap.set(".section-5 p:nth-of-type(3)", {x: "-200", y: "0"}),
+gsap.to(".section-5 p:nth-of-type(3)", {x: "0", y: "0", scrollTrigger: {
+      trigger: ".section-5 p:nth-of-type(3)",
+      start: "-900",
+      end: "+=1000",
+      //markers:true,
+     //pin:true,
+      scrub: true
+}})
+
+gsap.set(".section-5 p:nth-of-type(4)", {x: "-500", y: "0"}),
+gsap.to(".section-5 p:nth-of-type(4)", {x: "-700", y: "0", scrollTrigger: {
+      trigger: ".section-5 p:nth-of-type(4)",
+      start: "-900",
+      end: "+=1000",
+      //markers:true,
+     //pin:true,
+      scrub: true
+}})
+
+gsap.set(".section-5 p:nth-of-type(5)", {x: "0", y: "0"}),
+gsap.to(".section-5 p:nth-of-type(5)", {x: "-400", y: "0", scrollTrigger: {
+      trigger: ".section-5 p:nth-of-type(5)",
+      start: "-900",
+      end: "+=1000",
+      //markers:true,
+     //pin:true,
+      scrub: true
+}})
+
+gsap.set(".section-5 p:nth-of-type(6)", {x: "-400", y: "0"}),
+gsap.to(".section-5 p:nth-of-type(6)", {x: "0", y: "0", scrollTrigger: {
+      trigger: ".section-5 p:nth-of-type(6)",
+      start: "-900",
+      end: "+=1000",
+      //markers:true,
+     //pin:true,
+      scrub: true
+}})
+
+gsap.set(".section-5 p:nth-of-type(7)", {x: "-1000", y: "0"}),
+gsap.to(".section-5 p:nth-of-type(7)", {x: "-2000", y: "0", scrollTrigger: {
+      trigger: ".section-5 p:nth-of-type(7)",
+      start: "-900",
+      end: "+=1000",
+      //markers:true,
+     //pin:true,
+      scrub: true
+}})
+
+gsap.set(".section-7 svg", {y: "100vh"}),
+gsap.to(".section-7 svg", {y: "-30vh", scrollTrigger: {
+      trigger: ".section-7",
+      start: "0",
+      end: "+=1000",
+      //markers:true,
+      pin:true,
+      scrub: true
+}})

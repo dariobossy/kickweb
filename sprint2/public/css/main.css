@@ -421,5 +421,20 @@ section .text-fullwidth p:nth-of-type(7) {
 =================== */
 
 .section-7 {
+    /*background-color: var(--red);*/
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.section-7 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.section-8 {
     background-color: var(--red);
 }
