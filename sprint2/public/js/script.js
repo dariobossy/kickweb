@@ -21,8 +21,8 @@ gsap.to(".section-1 .inner-middle-left", {x: "-150%", scrollTrigger: {
       scrub: true
 }})*/
 
-gsap.set(".section-1 .inner-middle-left", {opacity: "1", y: 0}),
-gsap.to(".section-1 .inner-middle-left", {opacity: "0", y: -200, scrollTrigger: {
+gsap.set(".section-1 .inner-middle-left", {opacity: "1"}),
+gsap.to(".section-1 .inner-middle-left", {opacity: "0", scrollTrigger: {
       trigger: ".section-1 .inner-middle-left",
       start: "0%",
       end: "+=300",
@@ -31,8 +31,8 @@ gsap.to(".section-1 .inner-middle-left", {opacity: "0", y: -200, scrollTrigger: 
       scrub: true
 }})
 
-gsap.set(".section-1 .inner-middle-right", {opacity: "1", y: 0}),
-gsap.to(".section-1 .inner-middle-right", {opacity: "0", y: -200, scrollTrigger: {
+gsap.set(".section-1 .inner-middle-right", {opacity: "1"}),
+gsap.to(".section-1 .inner-middle-right", {opacity: "0", scrollTrigger: {
       trigger: ".section-1 .inner-middle-right",
       start: "0%",
       end: "+=300",
@@ -222,3 +222,23 @@ var animation = bodymovin.loadAnimation({
       autoplay: true, // optional
       name: "Wave Animation", // optional
  });
+
+gsap.set(".section-10 p", {scale: "0", y: "50"}),
+gsap.to(".section-10 p", {scale: "1.2", y: "0", scrollTrigger: {
+      trigger: ".section-10",
+      start: "0",
+      end: "+=2000",
+      //markers:true,
+      pin:true,
+      scrub: true
+}})
+
+gsap.set(".section-10 img", {scale: "1", y:"0", transform: "-49%,-49%"}),
+gsap.to(".section-10 img", {scale: "15", y:" -20vh", transform: "-49%,-49%", scrollTrigger: {
+      trigger: ".section-10",
+      start: "0",
+      end: "+=1000",
+      //markers:true,
+      //pin:true,
+      scrub: true
+}})

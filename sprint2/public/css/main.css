@@ -136,6 +136,10 @@ section > .section-wrapper .img-heart img {
     animation: img-heartbeat 1.25s infinite;
 }
 
+.section-12 > .section-wrapper .img-heart img {
+    margin-top: 5vh;
+}
+
 @keyframes img-heartbeat {
     0% {
         transform: scale(1);
@@ -389,32 +393,33 @@ section .text-fullwidth p i {
 }
 
 section .text-fullwidth p:nth-of-type(1) {
-    line-height: 2.5rem;
+    font-size: 5vw;
+    line-height: 3.5vw;
 }
 
 section .text-fullwidth p:nth-of-type(2) {
-    font-size: 5rem;
-    line-height: 3.5rem;
+    font-size: 7vw;
+    line-height: 5.5vw;
 }
 section .text-fullwidth p:nth-of-type(3) {
-    font-size: 6rem;
-    line-height: 4.5rem;
+    font-size: 9vw;
+    line-height: 6.5vw;
 }
 section .text-fullwidth p:nth-of-type(4) {
-    font-size: 8rem;
-    line-height: 6rem;
+    font-size: 10vw;
+    line-height: 8vw;
 }
 section .text-fullwidth p:nth-of-type(5) {
-    font-size: 11rem;
-    line-height: 9rem;
+    font-size: 13vw;
+    line-height: 11vw;
 }
 section .text-fullwidth p:nth-of-type(6) {
-    font-size: 17rem;
-    line-height: 14rem;
+    font-size: 19vw;
+    line-height: 16vw;
 }
 section .text-fullwidth p:nth-of-type(7) {
-    font-size: 25rem;
-    line-height: 19rem;
+    font-size: 27vw;
+    line-height: 21vw;
 }
 /* ===================
     SECTION 07
@@ -520,4 +525,40 @@ section .text-fullwidth p:nth-of-type(7) {
 .section-9 .text-fullscreen p {
     font-size: 10vw;
     line-height: 10vw;
+}
+
+/* ===================
+    SECTION 10
+=================== */
+
+.section-10 {
+    overflow: hidden;
+}
+
+.section-10 img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.section-11 p {
+    line-height: 7rem;
+}
+
+.section-11 i {
+    position: relative;
+}
+
+.section-11 i::after {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg width='389' height='71' viewBox='0 0 389 71' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.5 55C32.3333 38.3333 71.3 9.99999 92.5 30C119 55 139 52 153 41C167 30 196.5 6 211 21C225.5 36 246.5 60.5 280 49C313.5 37.5 297 -7.50002 373.5 55' stroke='%23EB2828' stroke-width='31' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    height: 27px;
+    width: 100%;
 }
