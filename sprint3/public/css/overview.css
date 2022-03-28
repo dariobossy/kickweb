@@ -1,0 +1,36 @@
+/* ===================
+    GENERAL STYLES
+=================== */
+
+:root {
+    --black: #010101;
+    --red: #EB2828;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    background-color: var(--black);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#container .link-menu {
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#container .link-menu a {
+    padding: 10px;
+    display: block;
+    color: white;
+}

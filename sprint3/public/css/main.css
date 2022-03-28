@@ -1,0 +1,564 @@
+/* ===================
+    GENERAL STYLES
+=================== */
+
+:root {
+    --black: #010101;
+    --red: #EB2828;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    background-color: var(--black);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6, p {
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 7vw;
+    line-height: 8vw;
+}
+
+h2 {
+    font-size: 6rem;
+    font-style: italic;
+    line-height: 7.5rem;
+}
+
+h3 {
+    font-size: 4rem;
+    font-style: italic;
+    line-height: 4.5rem;
+}
+
+p.text-large {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    margin: 0 0 2.5vw 2.5vw;
+}
+
+p.text-xlarge {
+    font-size: 7rem;
+    line-height: 7.5rem;
+    margin: 0 0 2.5vw 2.5vw;
+}
+
+/* ===================
+    SECTIONS
+=================== */
+
+section {
+    min-height: 100vh;
+}
+section.active {
+    visibility: visible;
+}
+
+section > .section-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+section.section > .section-wrapper {
+    min-height: 100vh;
+    position: relative;
+}
+
+section > .section-wrapper > .section-inner {
+    padding: 0 7vw;
+    position: relative;
+    z-index: 1;
+}
+
+section .section-inner.inner-middle {
+    margin: auto;
+    text-align: center;
+}
+
+section .section-inner.inner-middle {
+    margin: auto;
+    text-align: center;
+}
+
+section .section-inner.inner-left-bottom {
+    margin-right: auto;
+    margin-top: auto;
+}
+
+/* ===================
+    SECTION 01
+=================== */
+
+.section-heart .section-wrapper > .section-inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section-heart > .section-wrapper .section-inner.inner-middle-left {
+    left: 17vw;
+}
+
+.section-heart > .section-wrapper > .section-inner.inner-middle-left div:nth-of-type(2n) {
+    position: relative;
+    z-index: -1;
+}
+
+.section-heart > .section-wrapper > .section-inner.inner-middle-right {
+    right: 17vw;
+    transform: scale(-1, 1) translateY(-50%);
+}
+
+section .section-wrapper .img-heart {
+    /*position: absolute;
+    right: 0;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;*/
+    text-align: center;
+}
+
+section > .section-wrapper .img-heart img {
+    width: 50vw;
+    max-height: 90vh;
+    animation: img-heartbeat 1.25s infinite;
+}
+
+.section-12 > .section-wrapper .img-heart img {
+    margin-top: 5vh;
+}
+
+@keyframes img-heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.05);
+    }
+    20% {
+        transform: scale(1);
+    }
+}
+
+.section-1 .section-inner:nth-of-type(1) h1 div:nth-of-type(1) {
+    animation: text-toggle-01 5s infinite;
+    opacity: 0;
+}
+
+.section-1 .section-inner:nth-of-type(1) h1 div:nth-of-type(2) {
+    animation: text-toggle-02 5s infinite;
+    opacity: 0;
+}
+
+.section-1 .section-inner:nth-of-type(1) h1 div:nth-of-type(3) {
+    animation: text-toggle-03 5s infinite;
+    opacity: 0;
+}
+
+.section-1 .section-inner:nth-of-type(1) h1 div:nth-of-type(4) {
+    animation: text-toggle-04 5s infinite;
+    opacity: 0;
+}
+
+.section-1 .section-inner:nth-of-type(3) h1 div:nth-of-type(1) {
+    animation: text-toggle-05 5s infinite;
+    opacity: 0;
+}
+
+.section-1 .section-inner:nth-of-type(3) h1 div:nth-of-type(2) {
+    animation: text-toggle-06 5s infinite;
+    opacity: 0;
+}
+
+.section-1 .section-inner:nth-of-type(3) h1 div:nth-of-type(3) {
+    animation: text-toggle-07 5s infinite;
+    opacity: 0;
+}
+
+.section-1 .section-inner:nth-of-type(3) h1 div:nth-of-type(4) {
+    animation: text-toggle-08 5s infinite;
+    opacity: 0;
+}
+
+@keyframes text-toggle-01 {
+    1% {
+        opacity: 1
+    }
+    24% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    98% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 1;
+    }
+}
+
+@keyframes text-toggle-02 {
+    24% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes text-toggle-03 {
+    49% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1
+    }
+    74% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+}
+
+@keyframes text-toggle-04 {
+    74% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes text-toggle-06 {
+    1% {
+        opacity: 1
+    }
+    24% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    98% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 1;
+    }
+}
+
+@keyframes text-toggle-05 {
+    24% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes text-toggle-08 {
+    49% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1
+    }
+    74% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+}
+
+@keyframes text-toggle-07 {
+    74% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* ===================
+    SECTION 02
+=================== */
+
+.section-2 h2 {
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 5rem;
+    line-height: 6.5rem;
+    position: relative;
+}
+
+.section-2 h2 svg {
+    position: absolute;
+    left: 50%;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+}
+
+.section-2 h2:nth-of-type(2) svg {
+    width: 75%;
+}
+
+/* ===================
+    SECTION 03
+=================== */
+
+.section-3 .text-transformed {
+    font-style: italic;
+}
+
+.section-3 .flex-column {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.section-3 .flex-column div:not(.text-transformed) div {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.section-3 .flex-column div:not(.text-transformed) p {
+    margin: auto;
+    padding: 30px;
+}
+
+.section-3 .text-transformed {
+    transform: perspective(200px) rotateX(5deg);
+}
+
+
+/* ===================
+    SECTION 05
+=================== */
+
+.section-fullwidth {
+    position: relative;
+}
+
+section .text-fullwidth {
+    /*transform: translate(0%, -50%);*/
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    transform: translateX(-5vw);
+}
+
+section .text-fullwidth p i {
+    color: var(--red);
+}
+
+section .text-fullwidth p:nth-of-type(1) {
+    font-size: 5vw;
+    line-height: 3.5vw;
+}
+
+section .text-fullwidth p:nth-of-type(2) {
+    font-size: 7vw;
+    line-height: 5.5vw;
+}
+section .text-fullwidth p:nth-of-type(3) {
+    font-size: 9vw;
+    line-height: 6.5vw;
+}
+section .text-fullwidth p:nth-of-type(4) {
+    font-size: 10vw;
+    line-height: 8vw;
+}
+section .text-fullwidth p:nth-of-type(5) {
+    font-size: 13vw;
+    line-height: 11vw;
+}
+section .text-fullwidth p:nth-of-type(6) {
+    font-size: 19vw;
+    line-height: 16vw;
+}
+section .text-fullwidth p:nth-of-type(7) {
+    font-size: 27vw;
+    line-height: 21vw;
+}
+/* ===================
+    SECTION 07
+=================== */
+
+.section-7 {
+    /*background-color: var(--red);*/
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.section-7 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.section-7 #fire-container {
+    position: absolute;
+    z-index: 32;
+    bottom: -20vw;
+    width: 100vw;
+    height: 100vw;
+}
+
+/* ===================
+    SECTION 08
+=================== */
+
+.section-8 {
+    background-color: var(--red);
+    margin-top: -50vh;
+    position: relative;
+    z-index: 50;
+    pointer-events: none;
+}
+
+.section-8 b {
+    position: relative;
+}
+
+.section-8 b::after {
+    content: "";
+    position: absolute;
+    background-image: url("data:image/svg+xml,%3Csvg width='163' height='27' viewBox='0 0 163 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 24C8.66667 13.3334 24.2 -4.79998 41 8.00002C62 24 75 4.95911e-05 98 8.00002C121 16 141 2.00005 160 24' stroke='black' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    height: 20px;
+    width: 100%;
+}
+
+/* ===================
+    SECTION 09
+=================== */
+
+.section-9 {
+    position: relative;
+    padding-top: 30vw;
+}
+
+.section-9 svg {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+}
+.section-9 i {
+    animation: colorSwitch 2.5s 0s infinite;
+}
+
+.section-9 p {
+    animation: colorSwitch 2.5s 1.25s infinite;
+}
+
+@keyframes colorSwitch {
+    0% {
+        color: white;
+    }
+    49% {
+        color: white;
+    }
+    50% {
+        color: var(--red);
+    }
+    99% {
+        color: var(--red);
+    }
+}
+
+
+.section-9 .text-fullscreen {
+    width: 120vw;
+    margin-left: -10vw;
+}
+
+.section-9 .text-fullscreen p {
+    font-size: 10vw;
+    line-height: 10vw;
+}
+
+/* ===================
+    SECTION 10
+=================== */
+
+.section-10 {
+    overflow: hidden;
+}
+
+.section-10 img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.section-11 p {
+    line-height: 7rem;
+}
+
+.section-11 i {
+    position: relative;
+}
+
+.section-11 i::after {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg width='389' height='71' viewBox='0 0 389 71' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.5 55C32.3333 38.3333 71.3 9.99999 92.5 30C119 55 139 52 153 41C167 30 196.5 6 211 21C225.5 36 246.5 60.5 280 49C313.5 37.5 297 -7.50002 373.5 55' stroke='%23EB2828' stroke-width='31' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    height: 27px;
+    width: 100%;
+}
