@@ -562,3 +562,58 @@ section .text-fullwidth p:nth-of-type(7) {
     height: 27px;
     width: 100%;
 }
+
+/* ===================
+    MEDIA QUERIES
+=================== */
+
+
+@media (max-width: 900px) {
+    /* General Styles */
+    h1 {
+        font-size: 12vw;
+        line-height: 15vw;
+    }
+    p.text-large {
+        font-size: 10vw;
+        line-height: 12vw;
+        margin: 0 0 2.5vw 2.5vw;
+    }
+    p.text-xlarge {
+        font-size: 20vw;
+        line-height: 22vw;
+        margin: 0 0 2.5vw 2.5vw;
+    }
+    .section-12 > .section-wrapper .img-heart img {
+        margin-top: 28vh;
+    }
+
+    /* Section 1 */
+    section > .section-wrapper .img-heart img {
+        width: 80vw;
+        max-height: 90vh;
+    }
+    .section-heart > .section-wrapper > .section-inner.inner-middle-right {
+        right: 5vw;
+        transform: scale(-1, 1) translateY(-50%);
+    }
+    .section-heart > .section-wrapper > .section-inner.inner-middle-left {
+        left: 5vw;
+    }
+
+    /* Section 2 */
+    .section-2 h2 {
+        font-size: 10vw;
+        line-height: 20vw;
+        margin-bottom: 30px;
+    }
+
+    .section-3 .text-transformed {
+        margin-bottom: -1600px;
+    }
+
+    /* Section 2 */
+    .section-3 .flex-column {
+        flex-direction: column;
+    }
+}
